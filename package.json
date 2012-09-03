@@ -1,0 +1,5 @@
+{
+   "name": "flatiron-http-config",
+   "description": "HTTP integration for a Flatiron Application's config",
+   "main": "lib/index.js"
+}

@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+var app = require('flatiron').app;
+app.use(require('flatiron').plugins.http);
+app.use(require('../'), {
+  routers: [app.router]
+});
+app.start(9099);

@@ -1,7 +1,13 @@
 #!/usr/bin/env node
 var app = require('flatiron').app;
+app.config.defaults({
+  hello: 'aloha'
+});
 app.use(require('flatiron').plugins.http);
 app.use(require('../'), {
-  routers: [app.router]
+  routers: [app.router],
+  prefix: 'config'
 });
-app.start(9099);
+var port = process.env.PORT || 9099;
+app.start(port);
+console.log('Example configuration server is listening on port', port);

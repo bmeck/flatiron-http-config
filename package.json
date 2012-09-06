@@ -1,5 +1,10 @@
 {
    "name": "flatiron-http-config",
+   "version": "0.1.0",
    "description": "HTTP integration for a Flatiron Application's config",
-   "main": "lib/index.js"
+   "main": "lib/index.js",
+   "devDependencies": {
+      "flatiron": "~0.2.8",
+      "union": "~0.3.4"
+   }
 }
